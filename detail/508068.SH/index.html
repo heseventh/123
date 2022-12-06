@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单项目详细信息</title>
+    <script type="text/javascript" src="../../js/echarts/echarts-4.9.0/echarts.min.js"></script>
+    <script type="text/javascript" src="../../jsdata/datakl.js"></script>
+    <script type="text/javascript" src="../../jsdata/datafenh.js"></script>
+       <style type="text/css">
+        table{font-size:10px; table-layout: fixed;word-break: break-all; word-wrap: break-word;//表格固定布局}
+        .award-name{-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:100%; //超出部分显示省略号}
+       .table-d table td{ background: #ff7f68
+       }
+        tbody {
+            background-color: #b4a69f;
+            color: #d4cfcf;
+            height: 50px
+        }
+
+        .bg{
+            background-color: #ffe50c;
+        }
+          html,body{
+            width:100%;
+            height: 100%;
+            padding:0px;
+            margin:0px;
+            border:0px;
+            font-size: 12px;}
+           img {
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: -50px 0px;
+            background-size: 300px 200px;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+        }
+
+           div#global{
+            width:100%;
+            height: 100%;
+            padding:0px;
+            margin:0px;
+            border:0px;
+            font-size: 12px;
+            }
+           .hrLine{
+               vertical-align:middle;
+               display:inline-block;
+               height:1px
+            }
+           .text{font-family:"KaiTi_GB2312";
+                 color: #fdf8ff;
+                 font-size: 13px;
+                 text-align:center;
+                 height: 10px;
+                 margin-left: 0px;
+                 margin-top: 0px;
+           }
+
+           #map{
+                width: 50%;
+                height: 400px;
+                /*定义浮动，不定义的话，界面会乱*/
+                float: left;
+            }
+            #detail{
+                width: 100%;
+                /*定义浮动，不定义的话，界面会乱*/
+                float: left;
+            }
+            /*定义头部布局，前面的div可以不用写，#号前面默认有个id，凡事定义了id的标签，都可以用#号来表示*/
+
+            #cartCJ td {
+	            font-size:10px;
+	            border:1px solid #fefffc;
+	            padding:3px 7px 2px 7px;}
+
+            #cartCJ caption{
+                font-size:10px;
+                margin-bottom: 5px;}
+
+            #cartCJ tr{
+                font-size:10px;
+                background: #ccf0b2;}
+            #cartCJ th{
+                background: #e67b1c;}
+
+
+            #chart_alarm{
+                width: 50%;
+                height: 400px;
+                background-color: #fcfbff;
+                float: right;
+            }
+           #chart_alarm2{
+                width:50%;
+                height: 400px;
+                background-color: #fcfbff;
+                float: right;
+            }
+            #chart_alarm1{
+                width: 50%;
+                height: 400px;
+                background-color: #fcfbff;
+                float: left;
+            }
+           .img1{
+                width: 100%;
+                height: 400px;
+                /*定义浮动，不定义的话，界面会乱*/
+                float: left;
+           }
+           .img2{
+                width: 100%;
+                height: 100%;
+
+                /*定义浮动，不定义的话，界面会乱*/
+                float: left;
+           }
+    </style>
+</head>
+
+<body>
+    <div id="global" style="position: relative;">
+        <hr class="hrLine" style="width:100%;"/>
+        <a href='http://www.sse.com.cn/reits/assortment/prices/detail/price/?code=508068'
+           class="text" style="text-align:center; margin-left: 40%;width:100%;font-size:22px;
+           font-family:'华文楷体';color: #24567c;font-weight:800;"
+        >华夏北京保障房REIT信息与K线(链接至交易所)</a>
+
+
+        <div id="map" >
+            <img class = "img1" src = "../../jsdata/infopic/508068.SH/pic/jiegou.jpg">
+        </div>
+        <div id="chart_alarm">
+
+        </div>
+        <div id="chart_alarm1">
+
+        </div>
+        <div id="chart_alarm2">
+
+        </div>
+        <hr class="hrLine" style="width:100%;"/>
+
+
+        <hr class="hrLine" style="width:100%;"/>
+        <h2 class="text" style="width:100%;font-size:22px;color: #24567c;
+        font-family:'华文楷体';font-weight:800;" >项目明细信息</h2>
+
+        <hr class="hrLine" style=" width:100%;"/>
+        <div id="detail" >
+            <img class = "img2" src = "../../jsdata/infopic/508068.SH/pic/detail.jpg">
+        </div>
+    </div>
+    <script src='./js/functiondetail.js'></script>
+
+</body>
+</html>
